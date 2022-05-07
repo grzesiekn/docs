@@ -1787,4 +1787,35 @@ tper=10
 1,77070100100700ff@1,Leistung-akt.,W,Power_curr,0
 #
 ```
+### Socomec Countis E24 (MODBUS)
+
+More other data can be read, these are perhaps the most useful.
+code:
+```
+>D
+>B  
+->sensor53 r
+>M 1
++1,3,m,0,9600,PowerMeter,1,20,r0B03C5580006,0B03C55E,r0B03C5600006,r0B03C5680006,r0B03C5700006,r0B03C6520006,r0B03C65C0006,0B034D83,0B035583,0B035D83
+1,0B030CUUuuUUuu@i0:100,Voltage L1,V,Voltage_L1,2
+1,0B030Cx4UUuuUUuu@i0:100,Voltage L2,V,Voltage_L2,2
+1,0B030Cx8UUuuUUuu@i0:100,Voltage L3,V,Voltage_L3,2
+1,0B0304UUuuUUuu@i1:1000,Frequency,Hz,Frequency,3
+1,0B030CUUuuUUuu@i2:1000,Current L1,A,Current_L1,3
+1,0B030Cx4UUuuUUuu@i2:1000,Current L2,A,Current_L2,3
+1,0B030Cx8UUuuUUuu@i2:1000,Current L3,A,Current_L3,3
+1,0B030CUUuuUUuu@i3:0.1,Active Power,W,ActivePower,0
+1,0B030Cx8UUuuUUuu@i3:0.1,Apparent Power,AV,ApparentPower,0
+1,0B030CUUuuUUuu@i4:0.1,Active Power L1,W,ActivePower_L1,0
+1,0B030Cx4UUuuUUuu@i4:0.1,Active Power L2,W,ActivePower_L2,0
+1,0B030Cx8UUuuUUuu@i4:0.1,Active Power L3,W,ActivePower_L3,0
+1,0B030CUUuuUUuu@i5:1,Active Energy Total,kWh,TotalActiveEnergy,0
+1,0B030Cx8UUuuUUuu@i5:1,Apparent Energy Total,kVAh,TotalApparentEnergy,0
+1,0B030CUUuuUUuu@i6:1,Active Energy,kWh,ActiveEnergy,0
+1,0B030Cx8UUuuUUuu@i6:1,Apparent Energy,kVAh,ApparentEnergy,0
+1,0B0304UUuuUUuu@i7:1,Total Active Energy L1,kW,TotalActiveEnergy_L1,0
+1,0B0304UUuuUUuu@i8:1,Total Active Energy L2,kW,TotalActiveEnergy_L2,0
+1,0B0304UUuuUUuu@i9:1,Total Active Energy L3,kW,TotalActiveEnergy_L3,0
+#
+```
 -----
